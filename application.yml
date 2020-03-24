@@ -2,3 +2,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/
+---
+spring:
+  profiles: sujeto
+words: I,You,He,She,It
+---
+spring:
+  profiles: verbo
+words: play, sing, scream, dance, discover
