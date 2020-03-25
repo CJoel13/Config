@@ -3,6 +3,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/
+  instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
 server:
   port: 0
 ---
@@ -19,3 +21,19 @@ words: I,You,He,She,It
 spring:
   profiles: verbo
 words: play, sing, scream, dance, discover
+---
+spring:
+  profiles: articulo
+words: a, the
+---
+spring:
+  profiles: adjetivo
+words: reasonable, leaky, suspicious, ordinary, unlikely
+---
+spring:
+  profiles: sustantivo
+words: boat, book, vote, seat, backpack, partition, groundhog
+---
+spring:
+  profiles: sustantivo-frio
+words: icicle, refrigerator, blizzard, snowball
