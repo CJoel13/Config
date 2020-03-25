@@ -4,7 +4,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/
 server:
-  port: ${PORT:${SERVER_PORT:0}}
+  port: 0
 ---
 spring:
   profiles: sentence
