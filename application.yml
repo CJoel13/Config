@@ -37,3 +37,8 @@ words: boat, book, vote, seat, backpack, partition, groundhog
 spring:
   profiles: sustantivo-frio
 words: icicle, refrigerator, blizzard, snowball
+---
+spring:
+  profiles: dev_o
+server:  
+  port: 8030
