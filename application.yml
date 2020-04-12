@@ -20,6 +20,11 @@ server:
   port: 8030
 ---
 spring:
+  profiles: development_A
+server:  
+  port: 8040
+---
+spring:
   profiles: sujeto
 words: I,You,He,She,It
 ---
