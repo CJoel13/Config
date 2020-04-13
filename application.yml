@@ -20,7 +20,7 @@ server:
   port: 8030
 ---
 spring:
-  profiles: development_A
+  profiles: developmenta
 server:  
   port: 8040
 ---
